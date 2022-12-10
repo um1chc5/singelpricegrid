@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+main {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+    font-family: "Karla";
+    line-height: 1.6;
+}
+
+
+#container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card {
+    max-width: 39.6875rem;
+    height: 29.6875rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    grid-template-areas: 
+    "join join"
+    "sign-up why-up";
+}
+
+.pd-40 {
+    padding: 2.5rem;
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 0.5rem;
+}
+
+.join {
+    grid-area: join;
+}
+
+.join h2 {
+    color: var(--Cyan);
+    font-weight: 700;
+}
+
+.join h3 {
+    color: var(--Bright-Yellow);
+}
+
+.join p {
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+.sign-up {
+    grid-area: sign-up;
+    background-color: var(--Cyan);
+    color: white;
+    border-radius: 0 0 0 0.5rem;
+}
+
+.why-us {
+    grid-area: why-up;
+    background-color: #4ABEBD;
+    color: white;
+    border-radius: 0 0 0.5rem 0;
+}
+
+.cost-part {
+    display: flex;
+    align-items: center;
+}
+
+.cost-part h1 {
+    font-size: 2.25rem;
+}
+
+.cost-part p {
+    margin-left: 0.75rem;
+    opacity: 0.5;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.why-us h3 {
+    margin-bottom: 1rem;
+}
+
+.why-us p {
+    font-size: .875rem;
+    opacity: 0.7;
+}
+
